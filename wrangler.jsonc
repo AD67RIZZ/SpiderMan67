@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "neon-grapple-rush-multiplayer",
+  "name": "spiderman67",
   "main": "worker/index.ts",
 "assets": {
   "directory": "./dist",
