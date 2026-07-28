@@ -1,0 +1,30 @@
+
+ ⛅️ wrangler 4.114.0
+────────────────────
+Your Worker has access to the following bindings:
+Binding                               Resource                  Mode
+env.MATCH_ROOMS (MatchRoom)           Durable Object            local
+env.MATCHMAKER (Matchmaker)           Durable Object            local
+env.ALLOWED_ORIGINS ("*")             Environment Variable      local
+
+⎔ Starting local server...
+Wrangler detected this dev session is running in an AI agent.
+The Local Explorer API is available at http://127.0.0.1:8787/cdn-cgi/explorer/api
+Useful routes:
+  GET http://127.0.0.1:8787/cdn-cgi/explorer/api - OpenAPI schema
+  GET http://127.0.0.1:8787/cdn-cgi/explorer/api/d1/database - D1 databases
+  GET http://127.0.0.1:8787/cdn-cgi/explorer/api/local/workers - local Workers and bindings
+  GET http://127.0.0.1:8787/cdn-cgi/explorer/api/r2/buckets - R2 buckets
+  GET http://127.0.0.1:8787/cdn-cgi/explorer/api/storage/kv/namespaces - KV namespaces
+  GET http://127.0.0.1:8787/cdn-cgi/explorer/api/workers/durable_objects/namespaces - Durable Object namespaces
+  GET http://127.0.0.1:8787/cdn-cgi/explorer/api/workflows - Workflows
+[wrangler:info] Ready on http://0.0.0.0:8787
+[wrangler:info] - http://192.168.1.11:8787
+[wrangler:info] - http://127.0.0.1:8787
+[wrangler:info] GET /api/rooms/FUXCZD/ws 101 Switching Protocols (19ms)
+[wrangler:info] GET /api/rooms/FUXCZD/ws 101 Switching Protocols (10ms)
+[wrangler:info] GET /health 200 OK (9ms)
+[wrangler:info] GET /health 200 OK (9ms)
+[wrangler:info] GET /health 200 OK (5ms)
+[wrangler:info] GET /health 200 OK (5ms)
+[wrangler:info] GET /health 200 OK (7ms)

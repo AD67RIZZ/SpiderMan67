@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "neon-grapple-rush-multiplayer",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-07-25",
+  "workers_dev": true,
+  "preview_urls": true,
+  "dev": {
+    "ip": "0.0.0.0",
+    "port": 8787,
+    "local_protocol": "http"
+  },
+  "vars": {
+    // No credentials are used. Replace "*" with a comma-separated origin list
+    // after choosing the final Cloudflare Pages/custom domain if desired.
+    "ALLOWED_ORIGINS": "*"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "MATCH_ROOMS",
+        "class_name": "MatchRoom"
+      },
+      {
+        "name": "MATCHMAKER",
+        "class_name": "Matchmaker"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["MatchRoom", "Matchmaker"]
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
